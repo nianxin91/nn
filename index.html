@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>教學網頁設計課程</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <head>
+        <script src="https://h5p.org/h5p-standalone.js"></script>
+      </head>
+      
+</head>
+<body>
+    <div class="container">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e3ceeb;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: transparent;
+            border: 2px solid #ccc;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .profile-pic img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 200%;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-pic:hover img {
+            opacity: 0;
+        }
+
+        .profile-pic .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 200%;
+            opacity: 0;
+            background-image: url(hover-image.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-pic:hover .hover-image {
+            opacity: 1;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info label {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">首頁</a></li>
+            <li><a href="https://youtu.be/-vtw6-RgqEg">教學內容</a></li>
+            <li><a href="https://instagram.com/ernne__?igshid=NTc4MTIwNjQ2YQ==">關於我們</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <div class="container">
+        <h1>教學網頁設計課程</h1>
+        <div class="profile-pic">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <div class="hover-image"></div>
+        </div>
+        <div class="info">
+            <label>姓名:</label>
+            <span>劉念欣</span>
+        </div>
+        <div class="info">
+            <label>學校:</label>
+            <span>淡江大學</span>
+        </div>
+        <div class="info">
+            <label>系級:</label>
+            <span>教育科技</span>
+        
+        </div>
+        <div class="video-link">
+            <label>教學影片:</label>
+            <a href="https://youtu.be/-vtw6-RgqEg" target="_blank">影片連結</a>
+            
+        </div>
+            <div class="video-link">
+                <label>遊戲測驗:</label>
+                <a href="https://h5p.org/arithmetic-quiz" target="_blank">h5p</a>
+            </div>
+                <div class="video-link">
+                <label>這學期作品:</label>
+                <a href="https://hackmd.io/@BibYNam4THGEvsMSqSQLyg/rJuxg6hIh" target="_blank">hackmd</a>
+        </div>
+      
+        <button class="custom-btn btn-1">Read More</button>
+       
+
+          <div class="h5p-content">
+            <iframe src="https://h5p.org/content-types/advent-calendar" width="550" height="600" frameborder="0"></iframe>
+          </div>
+          
+    </div>
+</body>
+</html>
